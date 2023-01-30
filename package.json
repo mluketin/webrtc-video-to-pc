@@ -1,0 +1,14 @@
+{
+    "name": "webrtc-video-to-pc",
+    "version": "1.0.0",
+    "description": "Demo to show how to stream video to RTCPeerConnection",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "license": "UNLICENSED",
+    "private": true,
+    "dependencies": {
+        "node-static": "0.7.11"
+    }
+}

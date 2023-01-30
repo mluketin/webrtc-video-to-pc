@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+ *  Copyright (c) 2016 The WebRTC project authors. All Rights Reserved.
+ *
+ *  Use of this source code is governed by a BSD-style license
+ *  that can be found in the LICENSE file in the root of the source
+ *  tree.
+-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="mobile-web-app-capable" content="yes">
+  <base target="_blank">
+  <title>Video to peer connection</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <div id="container">
+
+    <h1>
+      <span>Stream from a video to a peer connection</span>
+    </h1>
+
+    <!-- use this for 'loop' testing -->
+    <!-- <video id="leftVideo" playsinline controls muted loop> -->
+    <video id="leftVideo" playsinline controls muted>
+      <!-- NB CORS: https://bugzilla.mozilla.org/show_bug.cgi?id=1177793 -->
+      <source src="video/chrome.mp4" type="video/mp4" />
+    </video>
+
+    <video id="rightVideo" playsinline autoplay controls></video>
+  </div>
+
+  <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+  <script src="js/main.js" async></script>
+</body>
+
+</html>
